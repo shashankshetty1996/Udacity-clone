@@ -43,4 +43,5 @@ section#takecharge {
 
 main {
   --light-weight: 300;
+  --intro-btn-bg-color: rgb(2, 179, 228);
 }
