@@ -204,7 +204,6 @@ main#course #course-intro h1 {
 }
 
 main#course #course-intro div#course-intro-list {
-  /* display: flex; */
   text-align: center;
   margin: 16px auto;
 }
@@ -214,12 +213,52 @@ main#course #course-intro #course-intro-list button {
   background-color: var(--white);
   color: var(--intro-btn-bg-color);
   font-size: 10.4px;
-  font-weight: 600;
+  font-weight: var(--dark-weight);
   height: 36px;
   margin: 8px;
   padding: 0px 8px;
   text-align: center;
   white-space: nowrap;
   text-transform: uppercase;
+  border-radius: var(--border-radius);
+}
+
+main#course .card-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  grid-gap: 70px;
+}
+
+main#course .card-container .card {
+  min-height: 348px;
+  background-color: var(--white);
   border-radius: 4px;
+  box-shadow: 5px 5px 25px 0 rgba(46, 61, 73, 0.2);
+}
+
+main#course .card-container .card .card-image {
+  position: relative;
+  height: 108px;
+  width: 100%;
+}
+
+main#course .card-container .card .card-image::before,
+main#course .card-container .card .card-image::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+main#course .card-container .card:nth-child(1) .card-image::before {
+  background-color: var(--card-1-overlay);
+}
+
+main#course .card-container .card:nth-child(2) .card-image::before {
+  background-color: var(--card-2-overlay);
+}
+
+main#course .card-container .card .card-image img {
+  width: 100%;
+  height: 100%;
 }

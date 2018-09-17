@@ -43,5 +43,9 @@ section#takecharge {
 
 main {
   --light-weight: 300;
+  --dark-weight: 600;
   --intro-btn-bg-color: rgb(2, 179, 228);
+  --border-radius: 4px;
+  --card-1-overlay: rgba(2, 179, 228, 0.8);
+  --card-2-overlay: rgba(2, 204, 186, 0.8);
 }
