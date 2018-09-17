@@ -1,0 +1,20 @@
+.container {
+  width: var(--container-width);
+  margin: auto;
+}
+
+.orange {
+  color: #ffa234;
+}
+
+.purple {
+  color: #a951ed;
+}
+
+.red {
+  color: #f04546;
+}
+
+.slate {
+  color: #2e3d49;
+}

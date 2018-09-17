@@ -1,0 +1,198 @@
+@import './variable.css';
+@import './common.css';
+@import './Navigation.css';
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-family);
+  font-size: var(--font-size);
+  color: var(--body-color);
+  line-height: var(--line-height);
+  -webkit-font-smoothing: antialiased;
+  margin: 0px;
+  overflow-x: hidden;
+}
+
+header {
+  position: relative;
+  width: 100vw;
+  height: 660px;
+  margin: 0px;
+  padding: 0.1px 0px;
+}
+
+header::before {
+  content: '';
+  position: absolute;
+  background: rgb(35, 204, 186);
+  background: -moz-linear-gradient(
+    90deg,
+    rgba(35, 204, 186, 1) 0%,
+    rgba(139, 140, 201, 1) 80%
+  );
+  background: -webkit-linear-gradient(
+    90deg,
+    rgba(35, 204, 186, 1) 0%,
+    rgba(139, 140, 201, 1) 80%
+  );
+  background: linear-gradient(
+    90deg,
+    rgba(35, 204, 186, 1) 0%,
+    rgba(139, 140, 201, 1) 80%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#23ccba",endColorstr="#8b8cc9",GradientType=1);
+
+  -webkit-clip-path: polygon(0 0, 100% 0%, 100% 235px, 0% 100%);
+  clip-path: polygon(0 0, 100% 0%, 100% 235px, 0% 100%);
+  height: 660px;
+  width: 100%;
+  z-index: -1;
+}
+
+section#banner {
+  margin-top: 2.75em;
+  text-align: center;
+  color: var(--white);
+}
+
+section#banner h1 {
+  font-size: var(--header-size);
+  font-weight: var(--header-weight);
+  line-height: 48px;
+  margin: 16px 0em 8px;
+}
+
+section#banner p {
+  margin-bottom: 40px;
+  line-height: 28px;
+}
+
+/* TAKECHARGE Section */
+section#takecharge {
+  position: absolute;
+  top: 240px;
+  width: var(--container-width);
+  display: grid;
+  grid-template-columns: 65% auto;
+  grid-column-gap: 50px;
+}
+
+section#takecharge .card-banner {
+  position: relative;
+  background-image: url('https://images.ctfassets.net/2y9b3o528xhq/5SEloohGz6Qeok04SEQS4s/88b1dfff4e38395b6375fc7e725a9985/BG-desktop.jpg');
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  height: 480px;
+  text-align: center;
+  border-radius: 4px;
+  color: var(--white);
+  cursor: pointer;
+}
+
+section#takecharge .card-banner .card-banner-content {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 80%;
+}
+
+section#takecharge .card-banner .card-banner-content h6 {
+  font-size: var(--h6-size);
+  font-weight: var(--h6-weight);
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-bottom: 24px;
+}
+
+section#takecharge .card-banner .card-banner-content img {
+  margin-bottom: 8px;
+}
+
+section#takecharge .card-banner .card-banner-content h2 {
+  font-size: var(--h2-size);
+  font-weight: var(--h2-weight);
+  line-height: var(--h2-line-height);
+  margin-bottom: 12px;
+}
+
+section#takecharge .card-banner .card-banner-content p {
+  margin-bottom: 24px;
+}
+
+section#takecharge .card-banner .card-banner-content button {
+  color: var(--btn-text);
+  height: var(--btn-height);
+  width: var(--btn-weight);
+  font-weight: var(--btn-weight);
+  border-radius: var(--btn-radius);
+  box-shadow: var(--btn-shadow);
+  background-color: var(--white);
+  padding: 0px 8px;
+  border: none;
+  cursor: pointer;
+}
+
+section#takecharge .card-container {
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+  grid-row-gap: 20px;
+}
+
+section#takecharge .card-container .card {
+  background-color: var(--white);
+  line-height: var(--card-line-height);
+  font-size: var(--card-font-size);
+  box-shadow: var(--card-shadow);
+  display: grid;
+  grid-template-columns: 40% 60%;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+section#takecharge .card-container .card:hover {
+  box-shadow: var(--card-hover-shadow);
+}
+
+section#takecharge .card-container .card .card-image {
+  width: 100%;
+  text-align: center;
+  margin: auto;
+}
+
+section#takecharge .card-container .card .card-image img {
+  width: 80%;
+  height: 80%;
+}
+
+section#takecharge .card-container .card .card-content {
+  padding: 20px;
+}
+
+section#takecharge .card-container .card .card-content p:first-of-type {
+  font-weight: 600;
+  margin-bottom: 6px;
+}
+
+section#takecharge .card-container .card .card-content p:last-of-type {
+  font-size: 13px;
+}
+
+main#course {
+  position: relative;
+}
+
+main#course h1 {
+  margin-top: 100px;
+  line-height: 36px;
+  text-align: center;
+  font-weight: var(--light-weight);
+}
