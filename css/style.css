@@ -47,8 +47,8 @@ header::before {
   );
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#23ccba",endColorstr="#8b8cc9",GradientType=1);
 
-  -webkit-clip-path: polygon(0 0, 100% 0%, 100% 235px, 0% 100%);
-  clip-path: polygon(0 0, 100% 0%, 100% 235px, 0% 100%);
+  -webkit-clip-path: var(--clip-path);
+  clip-path: var(--clip-path);
   height: 660px;
   width: 100%;
   z-index: -1;
@@ -212,8 +212,8 @@ main#course #course-intro #course-intro-list button {
   border: 1px solid var(--intro-btn-bg-color);
   background-color: var(--white);
   color: var(--intro-btn-bg-color);
-  font-size: 10.4px;
   font-weight: var(--dark-weight);
+  font-size: 10.4px;
   height: 36px;
   margin: 8px;
   padding: 0px 8px;
@@ -222,18 +222,23 @@ main#course #course-intro #course-intro-list button {
   text-transform: uppercase;
   border-radius: var(--border-radius);
 }
+main#course #course-intro #course-intro-list button:first-of-type {
+  background-color: var(--intro-btn-bg-color);
+  color: var(--white);
+}
 
 main#course .card-container {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  grid-template-columns: repeat(3, 1fr);
   grid-gap: 70px;
 }
 
 main#course .card-container .card {
-  min-height: 348px;
+  position: relative;
+  cursor: pointer;
   background-color: var(--white);
-  border-radius: 4px;
-  box-shadow: 5px 5px 25px 0 rgba(46, 61, 73, 0.2);
+  border-radius: var(--card-border-radius);
+  box-shadow: var(--card-shadow);
 }
 
 main#course .card-container .card .card-image {
@@ -242,12 +247,13 @@ main#course .card-container .card .card-image {
   width: 100%;
 }
 
-main#course .card-container .card .card-image::before,
-main#course .card-container .card .card-image::after {
+main#course .card-container .card .card-image::before {
   content: '';
   position: absolute;
   width: 100%;
   height: 100%;
+  border-top-left-radius: var(--card-border-radius);
+  border-top-right-radius: var(--card-border-radius);
 }
 
 main#course .card-container .card:nth-child(1) .card-image::before {
@@ -258,7 +264,149 @@ main#course .card-container .card:nth-child(2) .card-image::before {
   background-color: var(--card-2-overlay);
 }
 
+main#course .card-container .card:nth-child(3) .card-image::before {
+  background-color: var(--card-3-overlay);
+}
+
+main#course .card-container .card:nth-child(4) .card-image::before {
+  background-color: var(--card-4-overlay);
+}
+
+main#course .card-container .card:nth-child(5) .card-image::before {
+  background-color: var(--card-5-overlay);
+}
+
+main#course .card-container .card:nth-child(6) .card-image::before {
+  background-color: var(--card-6-overlay);
+}
+
+main#course .card-container .card:nth-child(7) .card-image::before {
+  background-color: var(--card-7-overlay);
+}
+
+main#course .card-container .card:nth-child(8) .card-image::before {
+  background-color: var(--card-8-overlay);
+}
+
 main#course .card-container .card .card-image img {
   width: 100%;
   height: 100%;
+  border-top-left-radius: var(--card-border-radius);
+  border-top-right-radius: var(--card-border-radius);
+}
+
+main#course .card-container .card .card-content {
+  width: 80%;
+  margin: 20px auto;
+}
+
+main#course .card-container .card .card-content .card-title,
+main#course .card-container .card .card-content .card-body {
+  padding: 17px 0px;
+}
+
+main#course .card-container .card .card-content .card-title p {
+  color: var(--course-level-color);
+  font-size: var(--course-level-size);
+  font-weight: var(--dark-weight);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+main#course .card-container .card .card-content .card-title h4 {
+  font-weight: var(--light-weight);
+  font-size: var(--course-title-size);
+  line-height: 36px;
+  margin-top: 12px;
+}
+
+main#course .card-container .card .card-content .card-body h6 {
+  color: var(--course-affiliates-color);
+  font-size: var(--course-affiliates-size);
+  font-weight: var(--dark-weight);
+  letter-spacing: 2px;
+  line-height: 24px;
+  margin-bottom: 24px;
+  text-transform: uppercase;
+}
+
+main#course .card-container .card .card-content .card-body ul {
+  list-style-type: none;
+  overflow: hidden;
+}
+
+main#course .card-container .card .card-content .card-body ul li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+main#course .card-container .card .card-content .card-body ul li img {
+  height: 34px;
+}
+
+/* Referral Section */
+section#referral {
+  margin: 90px 0px 125px;
+  background: var(--linear-gradient);
+}
+
+section#referral #referral-wrapper {
+  position: relative;
+  background-image: url('https://in.udacity.com/assets/iridium/images/referrals/shared/referral-banner@2x.png');
+  background-position-x: 100%;
+  background-position-y: 100%;
+  background-repeat: no-repeat;
+  background-size: 880px;
+  height: var(--height);
+  color: var(--color);
+}
+
+section#referral #referral-wrapper .content {
+  padding: 50px 0px;
+  font-size: var(--font-size);
+}
+
+section#referral #referral-wrapper .content .title {
+  font-weight: var(--light-weight);
+  line-height: var(--line-height);
+  margin: 16px 0px;
+}
+
+section#referral #referral-wrapper .content .subtitle {
+  font-weight: var(--dark-weight);
+  line-height: var(--line-height);
+  margin: 16px 0px;
+}
+
+section#referral #referral-wrapper .content button {
+  background-color: var(--white);
+  color: var(--color);
+  font-weight: var(--light-weight);
+  border-radius: var(--border-radius);
+  height: var(--btn-height);
+  width: var(--btn-width);
+  line-height: var(--line-height);
+  border: none;
+  outline: none;
+  cursor: pointer;
+  white-space: nowrap;
+  padding: 0 8px;
+  margin-top: 32px;
+  text-transform: uppercase;
+  font-size: 13px;
+  letter-spacing: 2px;
+  transition: all 0.3s ease;
+}
+
+/* Advantage Section */
+#advantage .title {
+  font-weight: var(--light-weight);
+  font-size: 36px;
+  line-height: 32px;
+  text-align: center;
+  margin-bottom: 24px;
 }

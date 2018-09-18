@@ -6,9 +6,13 @@
   --body-color: #525c65;
   --white: #fff;
   --line-height: 1.5rem;
-  --container-width: 75%;
+  --container-width: 62%;
   --height: 100%;
   --width: 100%;
+  --clip-path: polygon(0 0, 100% 0%, 100% 150px, 0% 100%);
+  --light-weight: 300;
+  --dark-weight: 600;
+  --border-radius: 4px;
 }
 
 header {
@@ -42,10 +46,31 @@ section#takecharge {
 }
 
 main {
-  --light-weight: 300;
-  --dark-weight: 600;
   --intro-btn-bg-color: rgb(2, 179, 228);
-  --border-radius: 4px;
+  --card-border-radius: 6px;
+  --card-shadow: 5px 5px 25px 0 rgba(46, 61, 73, 0.2);
   --card-1-overlay: rgba(2, 179, 228, 0.8);
   --card-2-overlay: rgba(2, 204, 186, 0.8);
+  --card-3-overlay: rgba(169, 81, 237, 0.8);
+  --card-4-overlay: rgba(125, 151, 173, 0.8);
+  --card-5-overlay: rgba(255, 162, 52, 0.8);
+  --card-6-overlay: rgba(255, 84, 131, 1);
+  --card-7-overlay: rgba(2, 204, 186, 0.8);
+  --card-8-overlay: rgba(169, 81, 237, 0.8);
+  --course-level-size: 11px;
+  --course-level-color: rgb(2, 179, 228);
+  --course-title-size: 20px;
+  --course-affiliates-size: 13px;
+  --course-affiliates-color: rgb(125, 151, 173);
+}
+
+section#referral {
+  --linear-gradient: linear-gradient(to right, #f89d89, #ffd297);
+  --color: rgb(167, 57, 200);
+  --font-size: 19px;
+  --line-height: 28px;
+  --btn-width: 220px;
+  --btn-height: 48px;
+  --btn-line-height: 42px;
+  --light-weight: 400;
 }
