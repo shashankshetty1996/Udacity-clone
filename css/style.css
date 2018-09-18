@@ -1,6 +1,7 @@
 @import './variable.css';
 @import './common.css';
 @import './Navigation.css';
+@import './coupons.css';
 
 * {
   margin: 0px;
@@ -349,57 +350,9 @@ main#course .card-container .card .card-content .card-body ul li img {
 }
 
 /* Referral Section */
-section#referral {
-  margin: 90px 0px 125px;
-  background: var(--linear-gradient);
-}
-
-section#referral #referral-wrapper {
-  position: relative;
+section#referral .wrapper {
   background-image: url('https://in.udacity.com/assets/iridium/images/referrals/shared/referral-banner@2x.png');
-  background-position-x: 100%;
-  background-position-y: 100%;
-  background-repeat: no-repeat;
   background-size: 880px;
-  height: var(--height);
-  color: var(--color);
-}
-
-section#referral #referral-wrapper .content {
-  padding: 50px 0px;
-  font-size: var(--font-size);
-}
-
-section#referral #referral-wrapper .content .title {
-  font-weight: var(--light-weight);
-  line-height: var(--line-height);
-  margin: 16px 0px;
-}
-
-section#referral #referral-wrapper .content .subtitle {
-  font-weight: var(--dark-weight);
-  line-height: var(--line-height);
-  margin: 16px 0px;
-}
-
-section#referral #referral-wrapper .content button {
-  background-color: var(--white);
-  color: var(--color);
-  font-weight: var(--light-weight);
-  border-radius: var(--border-radius);
-  height: var(--btn-height);
-  width: var(--btn-width);
-  line-height: var(--line-height);
-  border: none;
-  outline: none;
-  cursor: pointer;
-  white-space: nowrap;
-  padding: 0 8px;
-  margin-top: 32px;
-  text-transform: uppercase;
-  font-size: 13px;
-  letter-spacing: 2px;
-  transition: all 0.3s ease;
 }
 
 /* Advantage Section */
@@ -488,55 +441,8 @@ section#referral #referral-wrapper .content button {
 }
 
 /* Career section */
-section#career {
-  margin: 90px 0px 125px;
-  background: var(--linear-gradient);
-}
-
-section#career #career-wrapper {
-  position: relative;
+section#career .wrapper {
   background-image: url('https://in.udacity.com/assets/iridium/images/learning-path/widget-background@2x.png');
-  background-position-x: 100%;
-  background-position-y: 100%;
-  background-repeat: no-repeat;
   background-size: 554px;
-  height: var(--height);
   color: var(--white);
-}
-
-section#career #career-wrapper .content {
-  padding: 50px 0px;
-  font-size: var(--font-size);
-}
-
-section#career #career-wrapper .content .title {
-  font-weight: var(--light-weight);
-  line-height: var(--line-height);
-  margin: 16px 0px;
-}
-
-section#career #career-wrapper .content .subtitle {
-  font-weight: var(--dark-weight);
-  line-height: var(--line-height);
-  margin: 16px 0px;
-}
-
-section#career #career-wrapper .content button {
-  background-color: var(--white);
-  color: var(--color);
-  font-weight: var(--light-weight);
-  border-radius: var(--border-radius);
-  height: var(--btn-height);
-  width: var(--btn-width);
-  line-height: var(--line-height);
-  border: none;
-  outline: none;
-  cursor: pointer;
-  white-space: nowrap;
-  padding: 0 8px;
-  margin-top: 32px;
-  text-transform: uppercase;
-  font-size: 13px;
-  letter-spacing: 2px;
-  transition: all 0.3s ease;
 }

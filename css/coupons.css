@@ -1,0 +1,45 @@
+.coupons {
+  margin: 90px 0px 125px;
+  background: var(--linear-gradient);
+}
+.coupons .wrapper {
+  position: relative;
+  background-position-x: 100%;
+  background-position-y: 100%;
+  background-repeat: no-repeat;
+  height: var(--height);
+  color: var(--color);
+}
+.coupons .wrapper .content {
+  padding: 50px 0px;
+  font-size: var(--font-size);
+}
+.coupons .wrapper .content .title {
+  font-weight: var(--light-weight);
+  line-height: var(--line-height);
+  margin: 16px 0px;
+}
+.coupons .wrapper .content .subtitle {
+  font-weight: var(--dark-weight);
+  line-height: var(--line-height);
+  margin: 16px 0px;
+}
+.coupons .wrapper .content button {
+  background-color: var(--white);
+  color: var(--color);
+  font-weight: var(--light-weight);
+  border-radius: var(--border-radius);
+  height: var(--btn-height);
+  width: var(--btn-width);
+  line-height: var(--line-height);
+  border: none;
+  outline: none;
+  cursor: pointer;
+  white-space: nowrap;
+  padding: 0 8px;
+  margin-top: 32px;
+  text-transform: uppercase;
+  font-size: 13px;
+  letter-spacing: 2px;
+  transition: all 0.3s ease;
+}

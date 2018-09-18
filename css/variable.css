@@ -64,15 +64,18 @@ main {
   --course-affiliates-color: rgb(125, 151, 173);
 }
 
-section#referral {
-  --linear-gradient: linear-gradient(to right, #f89d89, #ffd297);
-  --color: rgb(167, 57, 200);
+.coupons {
   --font-size: 19px;
   --line-height: 28px;
   --btn-width: 220px;
   --btn-height: 48px;
   --btn-line-height: 42px;
   --light-weight: 400;
+}
+
+section#referral {
+  --linear-gradient: linear-gradient(to right, #f89d89, #ffd297);
+  --color: rgb(167, 57, 200);
 }
 
 section#advantage {
@@ -86,10 +89,4 @@ section#advantage {
 section#career {
   --linear-gradient: linear-gradient(to right, #5ebaf6, #605eca);
   --color: rgb(167, 57, 200);
-  --font-size: 19px;
-  --line-height: 28px;
-  --btn-width: 220px;
-  --btn-height: 48px;
-  --btn-line-height: 42px;
-  --light-weight: 400;
 }
