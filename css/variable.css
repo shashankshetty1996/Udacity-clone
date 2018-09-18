@@ -82,3 +82,14 @@ section#advantage {
   --title-size: 28px;
   --title-line-height: 36px;
 }
+
+section#career {
+  --linear-gradient: linear-gradient(to right, #5ebaf6, #605eca);
+  --color: rgb(167, 57, 200);
+  --font-size: 19px;
+  --line-height: 28px;
+  --btn-width: 220px;
+  --btn-height: 48px;
+  --btn-line-height: 42px;
+  --light-weight: 400;
+}
