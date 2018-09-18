@@ -13,6 +13,7 @@
   --light-weight: 300;
   --dark-weight: 600;
   --border-radius: 4px;
+  --italic: italic;
 }
 
 header {
@@ -89,4 +90,10 @@ section#advantage {
 section#career {
   --linear-gradient: linear-gradient(to right, #5ebaf6, #605eca);
   --color: rgb(167, 57, 200);
+}
+
+section#feed {
+  --title-size: 13px;
+  --title-line-height: 24px;
+  --h4-line-height: 36px;
 }

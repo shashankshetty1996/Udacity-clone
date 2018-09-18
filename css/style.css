@@ -446,3 +446,48 @@ section#career .wrapper {
   background-size: 554px;
   color: var(--white);
 }
+
+/* feed */
+#feed h6 {
+  font-weight: var(--dark-weight);
+  font-size: var(--title-size);
+  line-height: var(--title-line-height);
+  letter-spacing: 2px;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 24px;
+}
+
+#feed .slide .slide-wrapper .content {
+  position: relative;
+  display: flex;
+}
+
+#feed .slide .slide-wrapper .content::before {
+  content: '<';
+}
+
+#feed .slide .slide-wrapper .content::after {
+  content: '>';
+}
+
+#feed .slide .slide-wrapper .content::before,
+#feed .slide .slide-wrapper .content::after {
+  font-size: 150px;
+  font-weight: var(--light-weight);
+  color: #02b3e4;
+}
+
+#feed .slide .slide-wrapper .content .item {
+  width: 80%;
+  margin: auto;
+  /* display: inline-block; */
+}
+
+#feed .slide .slide-wrapper .content .item h4 {
+  text-align: center;
+  font-style: var(--italic);
+  font-weight: var(--light-weight);
+  line-height: var(--h4-line-height);
+  font-size: 24px;
+}
