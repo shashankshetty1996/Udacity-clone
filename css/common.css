@@ -23,6 +23,14 @@
   color: #02b3e4;
 }
 
+.magenta {
+  color: #ff5483;
+}
+
+.purple {
+  color: #a951ed;
+}
+
 .v-center {
   position: absolute;
   left: 50%;

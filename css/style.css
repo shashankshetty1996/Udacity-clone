@@ -410,3 +410,79 @@ section#referral #referral-wrapper .content button {
   text-align: center;
   margin-bottom: 24px;
 }
+
+#advantage .wrapper {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin-bottom: 200px;
+  grid-gap: 110px;
+}
+
+#advantage .wrapper .content .icon {
+  position: relative;
+  height: var(--icon-size);
+  width: var(--icon-size);
+  background-color: var(--white);
+  border-radius: var(--icon-radius);
+  box-shadow: var(--shadow);
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+#advantage .wrapper .content h3 {
+  font-weight: var(--light-weight);
+  font-size: var(--title-size);
+  line-height: var(--title-line-height);
+  margin-bottom: 12px;
+}
+
+#advantage .wrapper .content h3 span {
+  display: block;
+}
+
+#advantage .wrapper .content p {
+  font-size: 14px;
+  /* text-align: justify; */
+}
+
+#advantage .wrapper .image {
+  position: relative;
+}
+
+#advantage .wrapper:nth-child(even) .image img:first-child {
+  position: absolute;
+  top: 0%;
+  right: 0%;
+  box-shadow: var(--shadow);
+  width: 336px;
+  height: 225px;
+}
+
+#advantage .wrapper:nth-child(even) .image img:last-child {
+  position: absolute;
+  top: 150px;
+  left: 0%;
+  box-shadow: var(--shadow);
+  width: 330px;
+  height: 200px;
+  z-index: 2;
+}
+
+#advantage .wrapper:nth-child(odd) .image img:first-child {
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  box-shadow: var(--shadow);
+  width: 336px;
+  height: 225px;
+}
+
+#advantage .wrapper:nth-child(odd) .image img:last-child {
+  position: absolute;
+  top: 150px;
+  right: 0%;
+  box-shadow: var(--shadow);
+  width: 330px;
+  height: 200px;
+  z-index: 2;
+}
