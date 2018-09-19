@@ -458,30 +458,21 @@ section#career .wrapper {
   margin-bottom: 24px;
 }
 
-#feed .slide .slide-wrapper .content {
+#feed .slide .slide-wrapper {
   position: relative;
   display: flex;
 }
 
-#feed .slide .slide-wrapper .content::before {
-  content: '<';
+#feed .slide .slide-wrapper .left,
+#feed .slide .slide-wrapper .right {
+  width: 10%;
+  text-align: center;
+  cursor: pointer;
 }
 
-#feed .slide .slide-wrapper .content::after {
-  content: '>';
-}
-
-#feed .slide .slide-wrapper .content::before,
-#feed .slide .slide-wrapper .content::after {
-  font-size: 150px;
-  font-weight: var(--light-weight);
-  color: #02b3e4;
-}
-
-#feed .slide .slide-wrapper .content .item {
+#feed .slide .slide-wrapper .content {
   width: 80%;
   margin: auto;
-  /* display: inline-block; */
 }
 
 #feed .slide .slide-wrapper .content .item h4 {
@@ -490,4 +481,31 @@ section#career .wrapper {
   font-weight: var(--light-weight);
   line-height: var(--h4-line-height);
   font-size: 24px;
+}
+
+#feed .testominals {
+  display: block;
+  text-align: center;
+  margin-top: 20px;
+}
+
+#feed .testominals img {
+  text-align: center;
+}
+
+/* Download */
+section#download .wrapper {
+  background-image: url('https://in.udacity.com/assets/iridium/images/shared/download-app-banner/phone.png');
+  background-size: 554px;
+  color: var(--white);
+}
+
+section#download .wrapper.container .content button {
+  padding: 0;
+  position: relative;
+}
+
+section#download .wrapper .content button img {
+  width: var(--btn-width);
+  height: var(--btn-height);
 }

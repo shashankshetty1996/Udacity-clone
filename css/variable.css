@@ -97,3 +97,7 @@ section#feed {
   --title-line-height: 24px;
   --h4-line-height: 36px;
 }
+
+section#download {
+  --linear-gradient: linear-gradient(to bottom right, #02b3e4, #02ccba);
+}
